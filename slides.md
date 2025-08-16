@@ -1,351 +1,199 @@
 ---
 marp: true
-theme: custom
+theme: default
 paginate: true
-size: 16:9
+backgroundImage: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')
 style: |
-  /* Custom theme specification */
-  @import 'default';
-  
   section {
+    background-color: rgba(255, 255, 255, 0.9);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
   }
-  
-  section.title {
-    text-align: center;
-    background: linear-gradient(45deg, #1e3c72 0%, #2a5298 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  section.background-image {
-    background-image: url('https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-  }
-  
   h1 {
-    color: #FFD700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    border-bottom: 3px solid #FFD700;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
     padding-bottom: 10px;
   }
-  
   h2 {
-    color: #87CEEB;
-    margin-bottom: 20px;
+    color: #34495e;
   }
-  
-  code {
-    background-color: rgba(0,0,0,0.3);
-    padding: 2px 6px;
-    border-radius: 4px;
-    color: #FFD700;
+  h3 {
+    color: #7f8c8d;
   }
-  
-  pre {
-    background-color: rgba(0,0,0,0.4);
-    border-left: 4px solid #FFD700;
-    padding: 15px;
+  strong {
+    color: #e74c3c;
+  }
+  table {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
   }
-  
-  .highlight {
-    background-color: rgba(255, 215, 0, 0.2);
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid #FFD700;
-  }
-  
-  .author-info {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 0.8em;
-    opacity: 0.8;
+  blockquote {
+    background: #ecf0f1;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    margin: 1rem 0;
   }
 ---
 
-<!-- _class: title -->
-<!-- _paginate: false -->
+<!-- _backgroundImage: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80') -->
+<!-- _color: white -->
+<!-- _class: lead -->
 
-# Technical Documentation with Marp
+# Q2 2025 Business Analysis
+## Data-Driven Insights
 
-## Creating Maintainable Presentations for Software Teams
-
-**Professional Documentation Standards**
-
-<div class="author-info">
-Contact: 22f1000662@ds.study.iitm.ac.in
-</div>
+### Technical Documentation & Analysis
+**Presenter:** 22f1000662@ds.study.iitm.ac.in
 
 ---
 
-# Table of Contents
+<!-- _backgroundImage: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2015&q=80') -->
+<!-- _class: invert -->
 
-## 📋 What We'll Cover
+# Executive Summary
 
-- **Introduction to Marp** - Modern presentation framework
-- **Version Control Integration** - Git-friendly workflows  
-- **Custom Styling** - Themes and directives
-- **Mathematical Equations** - Algorithm complexity
-- **Best Practices** - Maintainable documentation
-- **Export Options** - Multiple output formats
+> **Performance Overview:** Q2 2025 delivered exceptional results across all key metrics
 
----
-
-# What is Marp?
-
-## Markdown Presentation Ecosystem
-
-**Marp** (Markdown Presentation) enables you to create slide presentations using pure Markdown syntax.
-
-### Key Benefits:
-- 📝 **Version Control Friendly** - Text-based, perfect for Git
-- 🎨 **Highly Customizable** - CSS styling and themes
-- 📊 **Multi-format Export** - PDF, HTML, PPTX, PNG
-- ⚡ **Fast Development** - No complex GUI tools needed
-- 🔄 **Reproducible Builds** - Consistent output across environments
-
-```markdown
----
-marp: true
-theme: default
----
-# Your slide content here
-```
+- **Revenue Growth**: 15% increase compared to Q1 2025
+- **Market Expansion**: Entered 3 new regions
+- **Customer Base**: 25% growth in active users
+- **Profitability**: Improved margins by 8%
 
 ---
 
-<!-- _class: background-image -->
+# Key Metrics Overview
 
-# Working with Background Images
-
-## Visual Impact in Technical Presentations
-
-This slide demonstrates how to use **background images** effectively in Marp presentations for technical documentation.
-
-### Implementation:
-```css
-section.background-image {
-  background-image: url('your-image-url');
-  background-size: cover;
-  background-position: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-}
-```
+| Metric | Q1 2025 | Q2 2025 | Change |
+|--------|---------|---------|--------|
+| Revenue | $2.1M | $2.4M | +15% |
+| Users | 12,000 | 15,000 | +25% |
+| Retention | 85% | 89% | +4% |
+| Cost/User | $45 | $38 | -15% |
 
 ---
 
-# Custom Theme Directives
+# Algorithm Performance Analysis
 
-## Marp-Specific Features
+## Data Processing Complexity
 
-Marp provides powerful directives for slide customization:
+Our analytics engine optimization results:
 
-| Directive | Purpose | Example |
-|-----------|---------|---------|
-| `<!-- _class: -->` | Apply CSS class to slide | `<!-- _class: title -->` |
-| `<!-- _paginate: -->` | Control page numbers | `<!-- _paginate: false -->` |
-| `<!-- _backgroundColor: -->` | Set slide background | `<!-- _backgroundColor: #1e3c72 -->` |
-| `<!-- _color: -->` | Set text color | `<!-- _color: white -->` |
+**Time Complexity Improvements:**
+- Previous algorithm: $O(n^2 \log n)$
+- New optimized version: $O(n \log n)$
 
-<div class="highlight">
-💡 <strong>Pro Tip:</strong> Use leading underscores for slide-specific directives, without underscores for global settings.
-</div>
+**Space Complexity:**
+- Memory usage: $O(n)$ where $n$ is dataset size
 
----
+**Performance Metrics:**
+$$\text{Efficiency Gain} = \frac{T_{old} - T_{new}}{T_{old}} \times 100\%$$
 
-# Mathematical Equations in Documentation
+Where $T_{old} = 2.3s$ and $T_{new} = 0.8s$
 
-## Algorithm Complexity Analysis
-
-When documenting algorithms, mathematical notation is essential:
-
-### Time Complexity Examples:
-
-**Linear Search:**
-$$T(n) = O(n)$$
-
-**Binary Search:**  
-$$T(n) = O(\log n)$$
-
-**Quick Sort Average Case:**
-$$T(n) = O(n \log n)$$
-
-**Matrix Multiplication:**
-$$T(n) = O(n^3)$$
-
-### Space Complexity:
-For a recursive algorithm with depth $d$ and space $s$ per call:
-$$S(n) = O(d \times s)$$
+$$\text{Efficiency Gain} = \frac{2.3 - 0.8}{2.3} \times 100\% = 65.2\%$$
 
 ---
 
-# Version Control Best Practices
+# Market Performance
 
-## Git Integration Strategies
+![bg right:40% 80%](https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Revenue+Growth+Chart)
 
-### Repository Structure:
-```
-project-docs/
-├── presentations/
-│   ├── slides.md          # Main presentation
-│   ├── themes/
-│   │   └── custom.css     # Theme files
-│   └── assets/
-│       └── images/        # Local images
-├── exports/               # Generated outputs
-│   ├── slides.pdf
-│   ├── slides.html
-│   └── slides.pptx
-└── .github/
-    └── workflows/
-        └── build-slides.yml
-```
-
-### Automated Builds:
-- **GitHub Actions** for automatic PDF generation
-- **Version tagging** for release presentations  
-- **Branch protection** for main presentation files
+- **Strong Q2 Performance**
+- Exceeded targets by 12%
+- Regional expansion successful
+- Cost optimization effective
 
 ---
 
-# Export and Distribution
+# Customer Insights
 
-## Multiple Output Formats
-
-Marp CLI provides comprehensive export options:
-
-### Command Examples:
-```bash
-# Export to PDF
-marp slides.md --pdf
-
-# Export to HTML with theme
-marp slides.md --html --theme custom
-
-# Export to PowerPoint
-marp slides.md --pptx
-
-# Watch mode for development
-marp slides.md --watch --server
-```
-
-### CI/CD Integration:
-```yaml
-- name: Build presentations
-  run: |
-    npm install -g @marp-team/marp-cli
-    marp slides.md --pdf --html --allow-local-files
-```
+- **Demographics**: 60% millennials, 25% Gen Z
+- **Geographic**: 40% urban, 35% suburban, 25% rural  
+- **Engagement**: Average session time increased 18%
+- **Satisfaction**: NPS score improved to 72
 
 ---
 
-# Advanced Styling Techniques
+# Competitive Analysis
 
-## CSS Customization
+![bg left:30% 90%](https://via.placeholder.com/300x200/2196F3/FFFFFF?text=Market+Share)
 
-### Custom Animations:
-```css
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-section h1 {
-  animation: fadeInUp 0.8s ease-out;
-}
-```
-
-### Responsive Design:
-```css
-section {
-  font-size: clamp(16px, 2.5vw, 24px);
-  padding: clamp(20px, 5vw, 60px);
-}
-```
+### Our Position:
+- Market share: 18% (up from 15%)
+- 2nd largest in our segment
+- Key differentiator: Customer service
+- Competitive pricing advantage
 
 ---
 
-# Best Practices Summary
+# Financial Highlights
 
-## Maintainable Technical Documentation
-
-### ✅ Do:
-- Use semantic Markdown structure
-- Keep themes in separate files
-- Include version information
-- Test exports regularly
-- Document custom directives
-
-### ❌ Avoid:
-- Inline styles in Markdown
-- Large embedded images
-- Complex nested layouts
-- Platform-specific paths
-- Hardcoded dimensions
-
-<div class="highlight">
-<strong>Remember:</strong> Great technical documentation is clear, consistent, and easily maintainable by your entire team.
-</div>
+- **Gross Margin**: 68% (target: 65%)
+- **Operating Expenses**: Reduced by 5%
+- **Cash Flow**: Positive $890K
+- **R&D Investment**: 12% of revenue
 
 ---
 
-<!-- _class: title -->
-<!-- _paginate: false -->
+# Operational Efficiency
+
+![bg right:35% 85%](https://via.placeholder.com/350x250/FF9800/FFFFFF?text=Efficiency+Metrics)
+
+### Key Improvements:
+- Process automation: 30% faster
+- Error reduction: 25% decrease  
+- Team productivity: Up 20%
+- Customer response time: 40% faster
+
+---
+
+# Challenges & Risks
+
+- **Supply Chain**: Minor delays in Q3
+- **Competition**: New market entrants
+- **Regulations**: Upcoming compliance changes
+- **Talent**: Skills gap in tech roles
+
+---
+
+# Q3 2025 Outlook
+
+### Priorities:
+- Launch new product line
+- Expand international presence  
+- Strengthen supply chain partnerships
+- Invest in team development
+
+### Targets:
+- Revenue: $2.8M (+17%)
+- Users: 18,000 (+20%)
+
+---
+
+<!-- _backgroundImage: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') -->
+<!-- _class: lead -->
 
 # Thank You
-
 ## Questions & Discussion
 
-**Technical Documentation with Marp**  
-*Creating Professional, Version-Controlled Presentations*
+**Contact Information:**
+- **Email:** 22f1000662@ds.study.iitm.ac.in
+- **Analytics Dashboard:** company.com/analytics
+- **Next Review:** October 15, 2025
 
 ---
 
-**Contact Information:**  
-📧 22f1000662@ds.study.iitm.ac.in
+<!-- _paginate: false -->
+<!-- _class: invert -->
 
-**Resources:**  
-🔗 [Marp Official Documentation](https://marp.app/)  
-🔗 [GitHub Repository](https://github.com/marp-team/marp)
+## Document Information
 
----
+**Version Control:**
+- Repository: quarterly-earnings-presentation
+- Branch: main
+- Last Updated: August 17, 2025
 
-# Appendix: Quick Reference
-
-## Essential Marp Syntax
-
-```markdown
----
-marp: true
-theme: default
-paginate: true
----
-
-# Slide Title
-Content goes here
-
----
-<!-- _class: custom-class -->
-# Special Slide
-With custom styling
-```
-
-### Math Notation:
-- Inline: `$E = mc^2$` → $E = mc^2$
-- Block: `$$\sum_{i=1}^{n} x_i$$` → $$\sum_{i=1}^{n} x_i$$
-
-**End of Presentation**
+**Formats Available:**
+- Markdown (source)
+- HTML (web presentation)
+- PDF (printable)
+- PowerPoint (export)

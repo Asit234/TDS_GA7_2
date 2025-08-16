@@ -1,366 +1,351 @@
 ---
 marp: true
-theme: custom-tech
+theme: custom
 paginate: true
-backgroundColor: #f8f9fa
-backgroundImage: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
-header: 'TechDocs Pro - Product Documentation'
-footer: '© 2025 TechDocs Pro | Contact: 22f1000662@ds.study.iitm.ac.in'
----
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-section {
-  font-family: 'Inter', sans-serif;
-  font-size: 22px;
-  line-height: 1.6;
-}
-
-h1 {
-  color: #2c3e50;
-  font-weight: 700;
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
-
-h2 {
-  color: #34495e;
-  font-weight: 600;
-  font-size: 1.8em;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 0.2em;
-  margin-bottom: 1em;
-}
-
-h3 {
-  color: #2980b9;
-  font-weight: 600;
-  font-size: 1.4em;
-}
-
-code {
-  background-color: #ecf0f1;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-family: 'Monaco', 'Menlo', monospace;
-  color: #e74c3c;
-}
-
-pre {
-  background-color: #2c3e50;
-  color: #ecf0f1;
-  padding: 20px;
-  border-radius: 8px;
-  border-left: 4px solid #3498db;
-  font-size: 0.9em;
-  overflow-x: auto;
-}
-
-blockquote {
-  border-left: 4px solid #3498db;
-  padding-left: 20px;
-  margin: 20px 0;
-  font-style: italic;
-  background-color: rgba(52, 152, 219, 0.1);
-  padding: 15px 20px;
-  border-radius: 4px;
-}
-
-.highlight {
-  background: linear-gradient(120deg, #a8e6cf 0%, #dcedc1 100%);
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #7fb069;
-}
-
-.warning {
-  background: linear-gradient(120deg, #ffeaa7 0%, #fab1a0 100%);
-  padding: 15px;
-  border-radius: 8px;
-  border-left: 4px solid #e17055;
-  margin: 15px 0;
-}
-
-.center {
-  text-align: center;
-}
-
-.large-text {
-  font-size: 1.3em;
-  font-weight: 600;
-}
-
-header {
-  background: linear-gradient(90deg, #2980b9, #3498db);
-  color: white;
-  padding: 5px 15px;
-  font-size: 0.9em;
-  font-weight: 600;
-}
-
-footer {
-  background: #34495e;
-  color: white;
-  padding: 5px 15px;
-  font-size: 0.8em;
-}
-</style>
-
-# TechDocs Pro
-## Advanced Documentation Platform
-
-### Streamlining Technical Communication
-
-**Contact:** 22f1000662@ds.study.iitm.ac.in
-
----
-
-## Table of Contents
-
-1. **Product Overview**
-2. **System Architecture**
-3. **Performance Metrics**
-4. **Implementation Guide**
-5. **API Reference**
-6. **Best Practices**
-7. **Troubleshooting**
-
----
-
-<!-- _class: highlight -->
-
-## Product Overview
-
-**TechDocs Pro** is an enterprise-grade documentation platform designed for modern software teams.
-
-### Key Features
-
-- **Real-time Collaboration** - Multiple authors, single source of truth
-- **Version Control Integration** - Git-based workflow with branch management
-- **Multi-format Export** - PDF, HTML, Confluence, and more
-- **Advanced Search** - Semantic search with AI-powered suggestions
-- **Custom Themes** - Brand-consistent documentation
-
-### Target Audience
-
-Technical writers, software engineers, product managers, and DevOps teams.
-
----
-
-<!-- _backgroundColor: #2c3e50 -->
-<!-- _color: white -->
-
-## System Architecture
-
-### Core Components
-
-```yaml
-TechDocs Pro Architecture:
-  Frontend:
-    - React 18 with TypeScript
-    - Material-UI Components
-    - Real-time WebSocket connections
+size: 16:9
+style: |
+  /* Custom theme specification */
+  @import 'default';
   
-  Backend:
-    - Node.js with Express
-    - PostgreSQL database
-    - Redis for caching
-    - Docker containerization
+  section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
   
-  Infrastructure:
-    - AWS ECS for container orchestration
-    - CloudFront CDN
-    - S3 for asset storage
-```
-
+  section.title {
+    text-align: center;
+    background: linear-gradient(45deg, #1e3c72 0%, #2a5298 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  section.background-image {
+    background-image: url('https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  }
+  
+  h1 {
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border-bottom: 3px solid #FFD700;
+    padding-bottom: 10px;
+  }
+  
+  h2 {
+    color: #87CEEB;
+    margin-bottom: 20px;
+  }
+  
+  code {
+    background-color: rgba(0,0,0,0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #FFD700;
+  }
+  
+  pre {
+    background-color: rgba(0,0,0,0.4);
+    border-left: 4px solid #FFD700;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .highlight {
+    background-color: rgba(255, 215, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #FFD700;
+  }
+  
+  .author-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.8em;
+    opacity: 0.8;
+  }
 ---
 
-## Performance Metrics
+<!-- _class: title -->
+<!-- _paginate: false -->
 
-### Algorithmic Complexity Analysis
+# Technical Documentation with Marp
 
-Our search algorithm achieves optimal performance through intelligent indexing:
+## Creating Maintainable Presentations for Software Teams
 
-**Time Complexity:**
-- Search Query: $O(\log n + k)$ where $k$ is result count
-- Document Indexing: $O(n \log n)$ for $n$ documents
-- Real-time Updates: $O(1)$ amortized
+**Professional Documentation Standards**
 
-**Space Complexity:**
-- Index Storage: $O(n \cdot m)$ where $m$ is average document size
-- Cache Layer: $O(k)$ for frequently accessed documents
-
-### Performance Benchmarks
-
-| Metric | Target | Actual |
-|--------|--------|--------|
-| Page Load Time | < 2s | 1.3s |
-| Search Response | < 100ms | 78ms |
-| Document Sync | < 5s | 3.2s |
-
----
-
-<!-- _backgroundImage: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') -->
-<!-- _color: white -->
-<!-- _class: center -->
-
-# Implementation Guide
-
-## Getting Started in 3 Simple Steps
-
----
-
-## Quick Start Installation
-
-### Prerequisites
-
-- Node.js 18+ 
-- Docker & Docker Compose
-- Git
-
-### Installation Steps
-
-```bash
-# Clone the repository
-git clone https://github.com/techdocs-pro/platform.git
-cd platform
-
-# Install dependencies
-npm install
-
-# Configure environment
-cp .env.example .env
-
-# Start services
-docker-compose up -d
-
-# Run the application
-npm run dev
-```
-
-<div class="warning">
-⚠️ <strong>Important:</strong> Ensure PostgreSQL is running before starting the application.
+<div class="author-info">
+Contact: 22f1000662@ds.study.iitm.ac.in
 </div>
 
 ---
 
-## API Reference
+# Table of Contents
 
-### Authentication Endpoints
+## 📋 What We'll Cover
 
-```typescript
-// Login endpoint
-POST /api/auth/login
-{
-  "email": "22f1000662@ds.study.iitm.ac.in",
-  "password": "secure_password"
+- **Introduction to Marp** - Modern presentation framework
+- **Version Control Integration** - Git-friendly workflows  
+- **Custom Styling** - Themes and directives
+- **Mathematical Equations** - Algorithm complexity
+- **Best Practices** - Maintainable documentation
+- **Export Options** - Multiple output formats
+
+---
+
+# What is Marp?
+
+## Markdown Presentation Ecosystem
+
+**Marp** (Markdown Presentation) enables you to create slide presentations using pure Markdown syntax.
+
+### Key Benefits:
+- 📝 **Version Control Friendly** - Text-based, perfect for Git
+- 🎨 **Highly Customizable** - CSS styling and themes
+- 📊 **Multi-format Export** - PDF, HTML, PPTX, PNG
+- ⚡ **Fast Development** - No complex GUI tools needed
+- 🔄 **Reproducible Builds** - Consistent output across environments
+
+```markdown
+---
+marp: true
+theme: default
+---
+# Your slide content here
+```
+
+---
+
+<!-- _class: background-image -->
+
+# Working with Background Images
+
+## Visual Impact in Technical Presentations
+
+This slide demonstrates how to use **background images** effectively in Marp presentations for technical documentation.
+
+### Implementation:
+```css
+section.background-image {
+  background-image: url('your-image-url');
+  background-size: cover;
+  background-position: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
+```
 
-// Response
-{
-  "token": "jwt_token_here",
-  "user": {
-    "id": "user_id",
-    "email": "22f1000662@ds.study.iitm.ac.in",
-    "role": "admin"
+---
+
+# Custom Theme Directives
+
+## Marp-Specific Features
+
+Marp provides powerful directives for slide customization:
+
+| Directive | Purpose | Example |
+|-----------|---------|---------|
+| `<!-- _class: -->` | Apply CSS class to slide | `<!-- _class: title -->` |
+| `<!-- _paginate: -->` | Control page numbers | `<!-- _paginate: false -->` |
+| `<!-- _backgroundColor: -->` | Set slide background | `<!-- _backgroundColor: #1e3c72 -->` |
+| `<!-- _color: -->` | Set text color | `<!-- _color: white -->` |
+
+<div class="highlight">
+💡 <strong>Pro Tip:</strong> Use leading underscores for slide-specific directives, without underscores for global settings.
+</div>
+
+---
+
+# Mathematical Equations in Documentation
+
+## Algorithm Complexity Analysis
+
+When documenting algorithms, mathematical notation is essential:
+
+### Time Complexity Examples:
+
+**Linear Search:**
+$$T(n) = O(n)$$
+
+**Binary Search:**  
+$$T(n) = O(\log n)$$
+
+**Quick Sort Average Case:**
+$$T(n) = O(n \log n)$$
+
+**Matrix Multiplication:**
+$$T(n) = O(n^3)$$
+
+### Space Complexity:
+For a recursive algorithm with depth $d$ and space $s$ per call:
+$$S(n) = O(d \times s)$$
+
+---
+
+# Version Control Best Practices
+
+## Git Integration Strategies
+
+### Repository Structure:
+```
+project-docs/
+├── presentations/
+│   ├── slides.md          # Main presentation
+│   ├── themes/
+│   │   └── custom.css     # Theme files
+│   └── assets/
+│       └── images/        # Local images
+├── exports/               # Generated outputs
+│   ├── slides.pdf
+│   ├── slides.html
+│   └── slides.pptx
+└── .github/
+    └── workflows/
+        └── build-slides.yml
+```
+
+### Automated Builds:
+- **GitHub Actions** for automatic PDF generation
+- **Version tagging** for release presentations  
+- **Branch protection** for main presentation files
+
+---
+
+# Export and Distribution
+
+## Multiple Output Formats
+
+Marp CLI provides comprehensive export options:
+
+### Command Examples:
+```bash
+# Export to PDF
+marp slides.md --pdf
+
+# Export to HTML with theme
+marp slides.md --html --theme custom
+
+# Export to PowerPoint
+marp slides.md --pptx
+
+# Watch mode for development
+marp slides.md --watch --server
+```
+
+### CI/CD Integration:
+```yaml
+- name: Build presentations
+  run: |
+    npm install -g @marp-team/marp-cli
+    marp slides.md --pdf --html --allow-local-files
+```
+
+---
+
+# Advanced Styling Techniques
+
+## CSS Customization
+
+### Custom Animations:
+```css
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+section h1 {
+  animation: fadeInUp 0.8s ease-out;
+}
 ```
 
-### Document Management
-
-```typescript
-// Create document
-POST /api/documents
-Authorization: Bearer <token>
-
-// Update document
-PUT /api/documents/{id}
-
-// Search documents
-GET /api/documents/search?q=query&limit=10
+### Responsive Design:
+```css
+section {
+  font-size: clamp(16px, 2.5vw, 24px);
+  padding: clamp(20px, 5vw, 60px);
+}
 ```
 
 ---
 
-## Best Practices
+# Best Practices Summary
 
-### Version Control Strategy
+## Maintainable Technical Documentation
 
-> **Git Flow Integration:** Every documentation change follows our branching strategy for maximum traceability and collaboration.
+### ✅ Do:
+- Use semantic Markdown structure
+- Keep themes in separate files
+- Include version information
+- Test exports regularly
+- Document custom directives
 
-1. **Feature Branches** - `feature/doc-update-api-v2`
-2. **Review Process** - Mandatory peer reviews
-3. **Automated Testing** - Link validation and spell checking
-4. **Deployment** - Automated publishing to staging/production
+### ❌ Avoid:
+- Inline styles in Markdown
+- Large embedded images
+- Complex nested layouts
+- Platform-specific paths
+- Hardcoded dimensions
 
-### Writing Guidelines
-
-- Use **active voice** and **clear headings**
-- Include **code examples** for all API endpoints
-- Maintain **consistent terminology** across documents
-- Regular **accessibility audits** (WCAG 2.1 AA compliance)
-
----
-
-## Troubleshooting
-
-### Common Issues
-
-**Database Connection Errors**
-```bash
-# Check PostgreSQL status
-docker-compose logs postgres
-
-# Reset database connection
-npm run db:reset
-```
-
-**Search Index Problems**
-```bash
-# Rebuild search index
-npm run search:reindex
-
-# Verify index health
-curl http://localhost:3000/api/health/search
-```
-
-### Mathematical Optimization Issues
-
-When dealing with large document sets, our indexing algorithm may require tuning:
-
-$$\text{Index Size} = \sum_{i=1}^{n} |D_i| \cdot \log_2(|V|)$$
-
-Where:
-- $|D_i|$ = size of document $i$
-- $|V|$ = vocabulary size
-- $n$ = total documents
+<div class="highlight">
+<strong>Remember:</strong> Great technical documentation is clear, consistent, and easily maintainable by your entire team.
+</div>
 
 ---
 
-<!-- _class: center large-text -->
-
-# Questions & Support
-
-**Technical Contact:**  
-22f1000662@ds.study.iitm.ac.in
-
-**Documentation:**  
-https://docs.techdocs-pro.com
-
-**GitHub Repository:**  
-https://github.com/techdocs-pro/platform
-
----
-
-<!-- _class: center -->
+<!-- _class: title -->
+<!-- _paginate: false -->
 
 # Thank You
 
-**TechDocs Pro** - Empowering Technical Teams
+## Questions & Discussion
 
-*Building the future of collaborative documentation*
+**Technical Documentation with Marp**  
+*Creating Professional, Version-Controlled Presentations*
 
-**Stay Connected:** 22f1000662@ds.study.iitm.ac.in
+---
+
+**Contact Information:**  
+📧 22f1000662@ds.study.iitm.ac.in
+
+**Resources:**  
+🔗 [Marp Official Documentation](https://marp.app/)  
+🔗 [GitHub Repository](https://github.com/marp-team/marp)
+
+---
+
+# Appendix: Quick Reference
+
+## Essential Marp Syntax
+
+```markdown
+---
+marp: true
+theme: default
+paginate: true
+---
+
+# Slide Title
+Content goes here
+
+---
+<!-- _class: custom-class -->
+# Special Slide
+With custom styling
+```
+
+### Math Notation:
+- Inline: `$E = mc^2$` → $E = mc^2$
+- Block: `$$\sum_{i=1}^{n} x_i$$` → $$\sum_{i=1}^{n} x_i$$
+
+**End of Presentation**

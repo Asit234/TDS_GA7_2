@@ -8,48 +8,48 @@ paginate: true
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
-  --color-primary: #34495e;
-  --color-secondary: #2c3e50;
-  --color-accent: #e74c3c;
-  --color-text: #ecf0f1;
+ --color-primary: #34495e;
+ --color-secondary: #2c3e50;
+ --color-accent: #e74c3c;
+ --color-text: #ecf0f1;
 }
 
 section {
-  font-family: 'Inter', sans-serif;
-  color: var(--color-text);
-  background-color: var(--color-secondary);
-  padding: 30px;
+ font-family: 'Inter', sans-serif;
+ color: var(--color-text);
+ background-color: var(--color-secondary);
+ padding: 30px;
 }
 
 h1, h2 {
-  font-weight: 700;
-  color: #ffffff;
+ font-weight: 700;
+ color: #ffffff;
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-  text-align: center;
+ font-size: 2.5em;
+ margin-bottom: 0.5em;
+ text-align: center;
 }
 
 h2 {
-  font-size: 1.8em;
-  border-bottom: 2px solid var(--color-accent);
-  padding-bottom: 5px;
-  margin-top: 1.5em;
+ font-size: 1.8em;
+ border-bottom: 2px solid var(--color-accent);
+ padding-bottom: 5px;
+ margin-top: 1.5em;
 }
 
 p, ul {
-  font-size: 1.2em;
-  line-height: 1.6;
+ font-size: 1.2em;
+ line-height: 1.6;
 }
 
 .my-custom-class {
-  background-color: #2980b9;
-  color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  border: 2px solid #3498db;
+ background-color: #2980b9;
+ color: #ffffff;
+ padding: 20px;
+ border-radius: 10px;
+ border: 2px solid #3498db;
 }
 </style>
 
